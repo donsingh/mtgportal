@@ -8,40 +8,26 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
-    <header class="fixed w-full">
-        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a
-                    href="/"
-                    class="flex items-center">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-                        Magic the Gathering: Portal
-                    </span>
-                </a>
-                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <li>
-                            <a href="/"
-                                class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
-                                aria-current="page">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/sets"
-                                class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
-                                aria-current="page">
-                                Sets
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<body class="bg-gray-100">
+    <!-- Header and Menu Bar -->
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">MTG</h1>
+            <nav class="space-x-6">
+                <a href="/" class="hover:text-blue-300">Home</a>
+                <a href="/sets" class="hover:text-blue-300">Sets</a>
+                <!-- <a href="#" class="hover:text-blue-300">Services</a> -->
+                <!-- <a href="#" class="hover:text-blue-300">Contact</a> -->
+            </nav>
+        </div>
     </header>
-    <main class="container mx-auto">
+    <!-- <main class="container">
         <div id="app"></div>
+    </main> -->
+    <main class="container mx-auto mt-8 px-4">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <div id="app"></div>
+        </div>
     </main>
 
     @vite('resources/js/app.js')
